@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    display: inline-block;
+    background-color: #f8f8ff;
+    width: 20rem;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.content {
+    display: inline-block;
+    flex-grow: 1;
+    margin-left: 20rem;
+    height: 100vh;
+    background-color: #fff;
+}
