@@ -1,0 +1,26 @@
+.userContainer {
+    display: flex;
+    align-items: center;
+}
+
+.detailContainer {
+    margin-left: 16px;
+}
+
+.txt {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1A194D;
+}
+
+.subTxt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #62618F;
+}
+
+.avatarImg{
+    border-radius: 18px;
+}

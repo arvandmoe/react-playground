@@ -4,18 +4,22 @@
 }
 
 .sidebar {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     background-color: #f8f8ff;
-    width: 20rem;
+    width: 16rem;
     position: fixed;
     height: 100%;
     overflow: auto;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 24px;
+    padding-left: 4px;
 }
 
 .content {
-    display: inline-block;
     flex-grow: 1;
-    margin-left: 20rem;
+    margin-left: 16rem;
     height: 100vh;
-    background-color: #fff;
+    background-color: blueviolet;
 }

@@ -1,17 +1,15 @@
 import { NextPage } from "next";
-import React from "react";
+import avatar from "public/images/user.jpg";
 import styles from "./BillingPage.module.scss";
+import MenuList from "./components/MenuList/MenuList";
+import UserItem from "./components/UserItem/UserItem";
 
-const BillingPage : NextPage = () => {
+const BillingPage: NextPage = () => {
   return (
     <div className={styles.container}>
       <div id="sidebar" className={styles.sidebar}>
-        <a className="active" href="#home">
-          Home
-        </a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+        <UserItem avatar={avatar.src} fullName="Mohammad Khaki" userId="@mdkhaki" />
+        <MenuList />
       </div>
       <div id="content" className={styles.content}>
         Main
