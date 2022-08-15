@@ -10,7 +10,7 @@ const MenuItem: FC<Props> = (props) => {
   const { title, icon } = props;
   return (
     <div className={styles.container}>
-      <div>{icon}</div>
+      {icon}
       <span className={styles.txt}>{title}</span>
     </div>
   );
