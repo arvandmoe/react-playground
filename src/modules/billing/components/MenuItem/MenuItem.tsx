@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import React, { FC, ReactNode } from "react";
 import styles from "./MenuItem.module.scss";
 
@@ -13,9 +14,17 @@ const MenuItem: FC<Props> = (props) => {
   const { index, title, icon, isActive, onItemClicked } = props;
   return (
     <div className={styles.container} onClick={() => onItemClicked(index)}>
+      <div
+        className={clsx(styles.notSelectSign, { [styles.selectSign]: isActive })}
+      ></div>
       {icon}
-      <span className={styles.txt}>{title}</span>
-      <span>{"isActive: " + isActive}</span>
+      <span
+        className={clsx(styles.txt, {
+          [styles.txtActive]: isActive,
+        })}
+      >
+        {title}
+      </span>
     </div>
   );
 };

@@ -12,7 +12,6 @@ const MenuList = (props: Props) => {
 
   return (
     <div className={styles.container}>
-      <div>{"selectedindex: " + selectedIndex}</div>
       <MenuItem
         index={0}
         title="General"

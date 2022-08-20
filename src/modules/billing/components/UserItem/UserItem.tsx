@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FC } from "react";
 import styles from "./UserItem.module.scss";
 
@@ -12,7 +13,13 @@ const UserItem: FC<Props> = (props) => {
 
   return (
     <div className={styles.userContainer}>
-      <img className={styles.avatarImg} src={avatar} width={48} height={48} />
+      <Image
+        className={styles.avatarImg}
+        src={avatar}
+        width={48}
+        height={48}
+        alt="avatar"
+      />
       <div className={styles.detailContainer}>
         <div>
           <span className={styles.txt}>{fullName}</span>

@@ -1,13 +1,31 @@
-.container{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 8px 8px 8px 16px;
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 8px 8px 16px;
+  cursor: pointer;
 }
 
-.txt{
-    font-weight: 400;
-    font-size: 14px;
-    color: #62618F;
-    height: 21px;
+.txt {
+  font-weight: 400;
+  font-size: 14px;
+  color: #62618f;
+  height: 21px;
+}
+
+.txtActive {
+  color: #1a194d;
+  font-weight: bold;
+}
+
+.selectSign {
+  width: 6px;
+  height: 48px;
+  background: #852e23;
+  border-radius: 24px;
+}
+.notSelectSign{
+  width: 6px;
+  height: 48px;;
+  border-radius: 24px;
 }
